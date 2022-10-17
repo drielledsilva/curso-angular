@@ -36,3 +36,13 @@
   font-size: .7em;
   font-style: italic;
 }
+
+a {
+  color: #dec129;
+  padding: .3em .6em;
+}
+
+a:hover {
+  background-color: #efefef;
+}
+
