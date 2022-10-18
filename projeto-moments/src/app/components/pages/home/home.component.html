@@ -1,6 +1,10 @@
 <div class="home-container">
   <h1>Veja o que estão compartilhando</h1>
-  <!-- form de busca -->
+  <div class="search-container">
+      <form>
+        <fa-icon [icon]="faSearch"></fa-icon>
+      </form>
+  </div>
   <div *ngIf="moments.length > 0; else noMoments">
     <div class="moment-container">
       <div class="moment" *ngFor="let moment of moments">
