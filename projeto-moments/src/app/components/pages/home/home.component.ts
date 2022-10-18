@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
   moments: Moment[] = []
   baseApiUrl = environment.baseApiUrl
 
-  // to do search
+  faSearch = faSearch;
+  searchTerm = '';
 
   constructor(private momentService: MomentService) { }
 
