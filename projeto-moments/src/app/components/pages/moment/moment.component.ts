@@ -15,11 +15,13 @@ export class MomentComponent implements OnInit {
 
   moment?: Moment;
 
-  constructor(private momentService: MomentService, route: ActivatedRoute) { }
+  constructor(
+  private momentService: MomentService,
+  private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
-
-    // id que está na url
+    const id = Number(this.route.snapshot.paramMap.get("id"));
   }
 
 }
